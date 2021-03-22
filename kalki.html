@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+   
+    <div class="container">
+      <div class="">
+    <label class="image-checkbox" for="toggle">
+		<%
+	if(Seats.get("A1")==0)
+	{%>
+		<figure>
+		  <img class="i1" id="myImage" onclick="changeImage()" src="seat.png" / width="100px">
+		  <figcaption class="i1" id="myImage" onclick="changeImage()" style="margin-left: 25px; margin-top: -100px;">A1</figcaption>
+		  </figure>
+	<%}
+	else if(Seats.get("A1")==1)
+	{%>
+    <figure>
+      <img class="i1" id="myImage"  src="seatbooked.webp" / width="100px">
+      <figcaption class="i1" id="myImage"  style="margin-left: 25px; margin-top: -100px;">A1</figcaption>
+      </figure>
+	<%}%>
+      <input type="checkbox" name="fruit" value="A1" />
+    </label>
+  </div>
+  
+  <div class="">
+    <label class="image-checkbox">
+			<%
+	if(Seats.get("A2")==0)
+	{%>
+		<figure>
+      <img class="i2" id="myImage1" onclick="changeImage1()" src="seat.png" / width="100px">
+       <figcaption class="i2" id="myImage1" onclick="changeImage1()"  style="margin-left: 45px; margin-top: -100px;">A2</figcaption> 
+      </figure>
+	<%}
+	else if(Seats.get("A2")==1)
+	{%>
+		<figure>
+		  <img class="i2" id="myImage1"  src="seatbooked.webp" / width="100px">
+		   <figcaption class="i2" id="myImage1"   style="margin-left: 45px; margin-top: -100px;">A2</figcaption> 
+		  </figure>
+	<%}%>
+      <input type="checkbox" name="fruit" value="A2" />
+      <i class="fa fa-check hidden"></i>
+    </label>
+  </div>
+  
+  
+  <div class="">
+    <label class="image-checkbox">
+		<%
+	if(Seats.get("A3")==0)
+	{%>
+		<figure>
+		  <img class="i3" id="myImage2" onclick="changeImage2()" src="seat.png" / width="100px">
+		   <figcaption class="i3" id="myImage2" onclick="changeImage2()" style="margin-left: 45px; margin-top: -100px;">A3</figcaption> 
+		  </figure>
+	<%}
+	else if(Seats.get("A3")==1)
+		{%>
+		<figure>
+		  <img class="i3" id="myImage2"  src="seatbooked.webp" / width="100px">
+		   <figcaption class="i3" id="myImage2"  style="margin-left: 45px; margin-top: -100px;">A3</figcaption> 
+		  </figure>
+	<%}%>
+      <input type="checkbox" name="fruit" value="A3" />
+      <i class="fa fa-check hidden"></i>
+    </label>
+  </div>
+  <div class="">
+    <label class="image-checkbox">
+		<%
+	if(Seats.get("A4")==0)
+	{%>
+		<figure>
+		  <img class="i4" id="myImage3" onclick="changeImage2()" src="seat.png" / width="100px">
+		   <figcaption class="i4" id="myImage3" onclick="changeImage3()" style="margin-left: 45px; margin-top: -100px;">A4</figcaption> 
+		  </figure>
+	<%}
+	else if(Seats.get("A4")==1)
+		{%>
+		<figure>
+		  <img class="i4" id="myImage3"  src="seatbooked.webp" / width="100px">
+		   <figcaption class="i4" id="myImage3"  style="margin-left: 45px; margin-top: -100px;">A4</figcaption> 
+		  </figure>
+	<%}%>
+      <input type="checkbox" name="fruit" value="A4" />
+      <i class="fa fa-check hidden"></i>
+    </label>
+  </div>
+
+  <div class="">
+    <label class="image-checkbox">
+		<%
+	if(Seats.get("A5")==0)
+	{%>
+		<figure>
+      <img class="i5" id="myImage4" onclick="changeImage4()" src="seat.png" / width="100px">
+      <figcaption class="i5" id="myImage4" onclick="changeImage4()" style="margin-left: 45px; margin-top: -100px;">A5</figcaption>
+      </figure>
+	<%}
+	else if(Seats.get("A5")==1)
+		{%>
+		<figure>
+		  <img class="i5" id="myImage4"  src="seatbooked.webp" / width="100px">
+		   <figcaption class="i5" id="myImage4"  style="margin-left: 45px; margin-top: -100px;">A5</figcaption> 
+		  </figure>
+	<%}%>
+      <input type="checkbox" name="fruit" value="A5" />
+      <i class="fa fa-check hidden"></i>
+    </label>
+  </div>
+</div>
+</div> 
